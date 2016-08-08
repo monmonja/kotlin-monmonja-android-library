@@ -4,7 +4,8 @@ import android.app.Fragment
 import android.app.FragmentManager
 import android.support.v4.app.FragmentActivity
 import android.support.v7.app.AppCompatActivity
-import com.monmonja.tides.R
+import com.wave.androidtest.R
+
 
 /**
  * Created by almondjoseph on 8/8/2016.

@@ -13,7 +13,7 @@ import java.io.IOException
 /**
  * Created by almondjoseph on 8/8/2016.
  */
-val DEFAULT_LOG_TAG = "test"
+val DEFAULT_LOG_TAG = "almond"
 val Context.isDebugBuild:Boolean
     get() = 0 != (applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE)
 

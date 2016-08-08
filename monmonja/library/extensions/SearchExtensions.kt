@@ -7,7 +7,7 @@ import android.support.v4.view.MenuItemCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.SearchView
 import android.view.Menu
-import com.monmonja.tides.R
+import com.wave.androidtest.R
 import org.jetbrains.anko.act
 
 /**
