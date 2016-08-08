@@ -1,17 +1,14 @@
 package lib.monmonja.library.extensions
 
 import android.content.Context
-import android.view.View
 import com.google.gson.Gson
-import com.monmonja.dailyPictureQuotes.DailyImageApplication
-import com.monmonja.dailyPictureQuotes.R
-import com.monmonja.dailyPictureQuotes.adapter.QuoteImageJsonResult
 import com.thetransactioncompany.jsonrpc2.JSONRPC2Request
 import com.thetransactioncompany.jsonrpc2.JSONRPC2Response
 import com.thetransactioncompany.jsonrpc2.client.ConnectionConfigurator
 import com.thetransactioncompany.jsonrpc2.client.JSONRPC2Session
-import me.zhanghai.android.materialprogressbar.MaterialProgressBar
-import org.jetbrains.anko.*
+import org.jetbrains.anko.async
+import org.jetbrains.anko.toast
+import org.jetbrains.anko.uiThread
 import java.net.HttpURLConnection
 
 /**

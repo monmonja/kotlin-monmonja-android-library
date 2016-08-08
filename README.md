@@ -26,3 +26,22 @@ This repo is just for reference.
     compile 'com.github.grandstaish.paperparcel:paperparcel-kotlin:1.0.0-rc4'
     kapt 'com.github.grandstaish.paperparcel:compiler:1.0.0-rc4'
 
+# add to colors.xml
+    <color name="colorAccentLight">#8D6E63</color>
+
+    <color name="colorAccent2">#2979FF</color>
+    <color name="colorAccent2Light">#448AFF</color>
+
+    <color name="window_background">#F9F7F5</color>
+    <color name="divider_color">#1F000000</color>
+    <color name="refresh_progress_1">@color/colorAccent2</color>
+    <color name="refresh_progress_2">@color/colorAccent</color>
+    <color name="refresh_progress_3">@color/colorPrimaryDark</color>
+    <color name="refresh_progress_4">@color/colorAccentLight</color>
+
+# add to ids.xml
+    <item name="action_search" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="swipe_refresh_layout" type="id" />
+    <item name="empty_layout" type="id" />
+
