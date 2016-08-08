@@ -27,6 +27,9 @@ This repo is just for reference.
     kapt 'com.github.grandstaish.paperparcel:compiler:1.0.0-rc4'
 
 # add to colors.xml
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
     <color name="colorAccentLight">#8D6E63</color>
 
     <color name="colorAccent2">#2979FF</color>
@@ -39,9 +42,20 @@ This repo is just for reference.
     <color name="refresh_progress_3">@color/colorPrimaryDark</color>
     <color name="refresh_progress_4">@color/colorAccentLight</color>
 
+    <color name="bodyText1">#de000000</color>
+    <color name="bodyText2">#8a000000</color>
+    <color name="bodyText3">#60000000</color>
+    <color name="bodyTextDisabled">#44000000</color>
+    <color name="bodyText1Invert">#deFFFFFF</color>
+
 # add to ids.xml
     <item name="action_search" type="id" />
+    <item name="frame_layout" type="id" />
     <item name="recycler_view" type="id" />
     <item name="swipe_refresh_layout" type="id" />
     <item name="empty_layout" type="id" />
+    <item name="empty_text_view" type="id" />
+    <item name="network_error_layout" type="id" />
+    <item name="network_error_retry" type="id" />
+    <item name="material_progress_bar" type="id" />
 
