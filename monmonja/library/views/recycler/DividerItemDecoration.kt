@@ -1,4 +1,4 @@
-package com.monmonja.conferenceDevelopVideos.views
+package lib.monmonja.library.views.recycler
 
 
 import android.content.Context

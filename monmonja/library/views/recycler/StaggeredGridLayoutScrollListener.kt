@@ -1,4 +1,4 @@
-package com.monmonja.conferenceDevelopVideos.views
+package lib.monmonja.library.views.recycler
 
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.StaggeredGridLayoutManager

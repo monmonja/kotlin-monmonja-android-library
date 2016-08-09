@@ -6,7 +6,7 @@ import android.support.v4.content.ContextCompat
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.widget.RecyclerView
 import android.view.View
-import com.monmonja.tides.R
+import com.monmonja.smsquotes.R
 import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.ctx
 import org.jetbrains.anko.find
