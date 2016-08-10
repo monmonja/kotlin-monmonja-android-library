@@ -1,0 +1,11 @@
+<resources>
+    <item name="action_search" type="id" />
+    <item name="frame_layout" type="id" />
+    <item name="recycler_view" type="id" />
+    <item name="swipe_refresh_layout" type="id" />
+    <item name="empty_layout" type="id" />
+    <item name="empty_text_view" type="id" />
+    <item name="network_error_layout" type="id" />
+    <item name="network_error_retry" type="id" />
+    <item name="material_progress_bar" type="id" />
+</resources>

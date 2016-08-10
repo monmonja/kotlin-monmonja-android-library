@@ -1,4 +1,4 @@
-package lib.src.main.java.lib.monmonja.library.extensions
+package lib.monmonja.library.extensions
 
 import android.content.Context
 import com.google.gson.Gson
@@ -6,6 +6,7 @@ import com.thetransactioncompany.jsonrpc2.JSONRPC2Request
 import com.thetransactioncompany.jsonrpc2.JSONRPC2Response
 import com.thetransactioncompany.jsonrpc2.client.ConnectionConfigurator
 import com.thetransactioncompany.jsonrpc2.client.JSONRPC2Session
+import lib.monmonja.library.extensions.debug
 import org.jetbrains.anko.async
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread

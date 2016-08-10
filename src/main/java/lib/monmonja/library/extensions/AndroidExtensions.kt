@@ -1,19 +1,17 @@
-package lib.src.main.java.lib.monmonja.library.extensions
+package lib.monmonja.library.extensions
 
-import android.app.Application
 import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.os.StrictMode
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import org.jetbrains.anko.ctx
 import java.io.File
 import java.io.IOException
 
 /**
  * Created by almondjoseph on 8/8/2016.
  */
-val DEFAULT_LOG_TAG = "almond"
+val DEFAULT_LOG_TAG = "monmonja-lib"
 val Context.isDebugBuild:Boolean
     get() = 0 != (applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE)
 

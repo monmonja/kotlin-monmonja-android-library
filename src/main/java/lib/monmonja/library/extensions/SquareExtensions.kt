@@ -1,4 +1,4 @@
-package lib.src.main.java.lib.monmonja.library.extensions
+package lib.monmonja.library.extensions
 
 import android.widget.ImageView
 import com.squareup.picasso.Picasso

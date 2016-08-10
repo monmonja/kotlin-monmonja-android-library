@@ -1,4 +1,4 @@
-package lib.src.main.java.lib.monmonja.library.views.data
+package lib.monmonja.library.views.data
 
 import android.support.v7.widget.RecyclerView
 

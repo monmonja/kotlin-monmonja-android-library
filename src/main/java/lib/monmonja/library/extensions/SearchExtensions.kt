@@ -1,4 +1,4 @@
-package lib.src.main.java.lib.monmonja.library.extensions
+package lib.monmonja.library.extensions
 
 import android.app.SearchManager
 import android.content.Intent
@@ -7,7 +7,7 @@ import android.support.v4.view.MenuItemCompat
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.SearchView
 import android.view.Menu
-import com.wave.androidtest.R
+import lib.monmonja.library.R
 import org.jetbrains.anko.act
 
 /**

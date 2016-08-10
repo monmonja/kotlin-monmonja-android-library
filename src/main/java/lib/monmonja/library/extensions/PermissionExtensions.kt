@@ -1,4 +1,4 @@
-package lib.src.main.java.lib.monmonja.library.extensions
+package lib.monmonja.library.extensions
 
 import android.content.pm.PackageManager
 import android.support.v4.app.ActivityCompat

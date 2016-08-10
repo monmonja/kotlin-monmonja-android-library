@@ -1,61 +1,9 @@
-This repo is just for reference.
-> create a folder lib under java then cd lib then clone
+This repo is used in monmonja apps
+> clone the repo then add library with new module then import gradle project then add library to dependencies
 
-# library used
-    compile 'com.google.firebase:firebase-ads:9.2.1'
-    compile 'com.google.firebase:firebase-analytics:9.0.0'
+on the apps gradle add
+    debugCompile project(path: ':custom_lib', configuration: "libraryDebug")
+    releaseCompile project(path: ':custom_lib', configuration: "libraryRelease")
 
-    compile 'org.jetbrains.anko:anko-sdk23:0.8.3' // sdk19, sdk21, sdk23 are also available
 
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'org.jetbrains.anko:anko-appcompat-v7:0.8.3'
-
-    compile 'com.android.support:design:24.1.1'
-    compile 'org.jetbrains.anko:anko-design:0.8.3'
-
-    compile 'com.android.support:recyclerview-v7:24.1.1'
-    compile 'org.jetbrains.anko:anko-recyclerview-v7:0.8.3'
-
-    compile 'com.google.code.gson:gson:2.6.2'
-    compile 'com.thetransactioncompany:jsonrpc2-client:1.16.4'
-
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
-
-    compile 'com.github.grandstaish.paperparcel:paperparcel:1.0.0-rc4'
-    compile 'com.github.grandstaish.paperparcel:paperparcel-kotlin:1.0.0-rc4'
-    kapt 'com.github.grandstaish.paperparcel:compiler:1.0.0-rc4'
-
-# add to colors.xml
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorAccentLight">#8D6E63</color>
-
-    <color name="colorAccent2">#2979FF</color>
-    <color name="colorAccent2Light">#448AFF</color>
-
-    <color name="window_background">#F9F7F5</color>
-    <color name="divider_color">#1F000000</color>
-    <color name="refresh_progress_1">@color/colorAccent2</color>
-    <color name="refresh_progress_2">@color/colorAccent</color>
-    <color name="refresh_progress_3">@color/colorPrimaryDark</color>
-    <color name="refresh_progress_4">@color/colorAccentLight</color>
-
-    <color name="bodyText1">#de000000</color>
-    <color name="bodyText2">#8a000000</color>
-    <color name="bodyText3">#60000000</color>
-    <color name="bodyTextDisabled">#44000000</color>
-    <color name="bodyText1Invert">#deFFFFFF</color>
-
-# add to ids.xml
-    <item name="action_search" type="id" />
-    <item name="frame_layout" type="id" />
-    <item name="recycler_view" type="id" />
-    <item name="swipe_refresh_layout" type="id" />
-    <item name="empty_layout" type="id" />
-    <item name="empty_text_view" type="id" />
-    <item name="network_error_layout" type="id" />
-    <item name="network_error_retry" type="id" />
-    <item name="material_progress_bar" type="id" />
 

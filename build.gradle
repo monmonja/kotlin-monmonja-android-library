@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
@@ -16,10 +17,75 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultPublishConfig 'release'
+    publishNonDefault true
+    productFlavors {
+        library {
+            /* This strange empty flavour is actually needed
+               for the step 3 to be successful               */
+        }
+    }
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+kapt {
+    generateStubs = true
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
+    // support libraries
     compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:cardview-v7:24.1.1'
+    // kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // anko
+    compile 'org.jetbrains.anko:anko-sdk23:0.8.3'
+    compile 'org.jetbrains.anko:anko-appcompat-v7:0.8.3'
+    compile 'org.jetbrains.anko:anko-design:0.8.3'
+    compile 'org.jetbrains.anko:anko-recyclerview-v7:0.8.3'
+    compile 'org.jetbrains.anko:anko-cardview-v7:0.8.3'
+    compile 'org.jetbrains.anko:anko-sqlite:0.8.3'
+
+    // paper parcel
+    kapt 'com.github.grandstaish.paperparcel:compiler:1.0.0-rc4'
+    compile 'com.github.grandstaish.paperparcel:paperparcel:1.0.0-rc4'
+    compile 'com.github.grandstaish.paperparcel:paperparcel-kotlin:1.0.0-rc4'
+    // google services
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    // firebase
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+
+    // rxjava
+    compile 'io.reactivex:rxjava:1.1.5'
+    compile 'io.reactivex:rxandroid:1.2.0'
+
+
+    // json rpc
+    compile 'com.thetransactioncompany:jsonrpc2-client:1.16.4'
+    // square
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    // other library
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.roughike:bottom-bar:1.3.3'
+    compile 'me.zhanghai.android.materialprogressbar:library:1.1.6'
+
+}
+
+repositories {
+    mavenCentral()
 }

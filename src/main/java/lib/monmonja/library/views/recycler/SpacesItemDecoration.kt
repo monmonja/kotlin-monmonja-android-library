@@ -1,4 +1,4 @@
-package lib.src.main.java.lib.monmonja.library.views.recycler
+package lib.monmonja.library.views.recycler
 
 import android.content.Context
 import android.graphics.Rect

@@ -1,10 +1,10 @@
-package lib.src.main.java.lib.monmonja.library.extensions
+package lib.monmonja.library.extensions
 
 import android.app.Fragment
 import android.app.FragmentManager
 import android.support.v4.app.FragmentActivity
 import android.support.v7.app.AppCompatActivity
-import com.wave.androidtest.R
+import lib.monmonja.library.R
 
 
 /**
