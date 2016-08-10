@@ -1,10 +1,11 @@
-package lib.monmonja.library.extensions
+package lib.src.main.java.lib.monmonja.library.extensions
 
 import android.content.pm.PackageManager
 import android.support.v4.app.ActivityCompat
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import org.jetbrains.anko.support.v4.act
+
 
 /**
  * Created by almondjoseph on 9/5/16.

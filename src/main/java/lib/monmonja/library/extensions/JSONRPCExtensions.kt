@@ -1,4 +1,4 @@
-package lib.monmonja.library.extensions
+package lib.src.main.java.lib.monmonja.library.extensions
 
 import android.content.Context
 import com.google.gson.Gson

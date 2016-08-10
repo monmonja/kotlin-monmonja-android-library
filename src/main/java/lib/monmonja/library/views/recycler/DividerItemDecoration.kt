@@ -1,6 +1,7 @@
-package com.monmonja.conferenceDevelopVideos.views
+package lib.src.main.java.lib.monmonja.library.views.recycler
 
 
+import android.R
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Rect
@@ -85,7 +86,7 @@ class DividerItemDecoration(context: Context, orientation: Int) : RecyclerView.I
 
     companion object {
 
-        private val ATTRS = intArrayOf(android.R.attr.listDivider)
+        private val ATTRS = intArrayOf(R.attr.listDivider)
 
         val HORIZONTAL_LIST = LinearLayoutManager.HORIZONTAL
 

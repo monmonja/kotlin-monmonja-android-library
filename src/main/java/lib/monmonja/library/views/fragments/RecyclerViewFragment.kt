@@ -1,4 +1,4 @@
-package lib.monmonja.library.views.fragments
+package lib.src.main.java.lib.monmonja.library.views.fragments
 
 import android.app.Fragment
 import android.os.Bundle
