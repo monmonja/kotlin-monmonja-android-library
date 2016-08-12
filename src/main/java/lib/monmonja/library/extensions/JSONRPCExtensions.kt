@@ -7,6 +7,8 @@ import com.thetransactioncompany.jsonrpc2.JSONRPC2Response
 import com.thetransactioncompany.jsonrpc2.client.ConnectionConfigurator
 import com.thetransactioncompany.jsonrpc2.client.JSONRPC2Session
 import lib.monmonja.library.extensions.debug
+import nz.bradcampbell.paperparcel.PaperParcel
+import nz.bradcampbell.paperparcel.PaperParcelable
 import org.jetbrains.anko.async
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread

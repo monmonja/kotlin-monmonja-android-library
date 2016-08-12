@@ -5,5 +5,6 @@ on the apps gradle add
 >    debugCompile project(path: ':custom_lib', configuration: "libraryDebug")
 >    releaseCompile project(path: ':custom_lib', configuration: "libraryRelease")
 
-
+If android studio cannot compile it try
+> ./gradlew build --debug
 
