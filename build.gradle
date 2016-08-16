@@ -6,7 +6,7 @@ android {
     buildToolsVersion "24.0.0"
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion 18
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -38,9 +38,6 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
-kapt {
-    generateStubs = true
-}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -60,10 +57,6 @@ dependencies {
     compile 'org.jetbrains.anko:anko-cardview-v7:0.8.3'
     compile 'org.jetbrains.anko:anko-sqlite:0.8.3'
 
-    // paper parcel
-    kapt 'com.github.grandstaish.paperparcel:compiler:1.0.0-rc4'
-    compile 'com.github.grandstaish.paperparcel:paperparcel:1.0.0-rc4'
-    compile 'com.github.grandstaish.paperparcel:paperparcel-kotlin:1.0.0-rc4'
     // google services
     compile 'com.google.android.gms:play-services-auth:9.4.0'
     // firebase
