@@ -16,7 +16,7 @@ import java.io.FileNotFoundException
 
 @Throws(FileNotFoundException::class)
 fun getBitmapAndScaleWithHeight(context: Context, sourceImageUri: Uri, height: Int): Bitmap {
-    var selectedBitmap: Bitmap? = null
+    val selectedBitmap: Bitmap?
     val bmpFactoryOptions = BitmapFactory.Options()
     bmpFactoryOptions.inJustDecodeBounds = true
     if (sourceImageUri.toString().contains("content://")) {

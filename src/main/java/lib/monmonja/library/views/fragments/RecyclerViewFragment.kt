@@ -1,15 +1,15 @@
 package lib.monmonja.library.views.fragments
 
-import android.app.Fragment
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
 import android.support.v4.widget.SwipeRefreshLayout
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import lib.monmonja.library.R
 import org.jetbrains.anko.backgroundColor
-import org.jetbrains.anko.ctx
-import org.jetbrains.anko.find
+import org.jetbrains.anko.support.v4.ctx
+import org.jetbrains.anko.support.v4.find
 
 /**
  * Created by almondjoseph on 7/8/2016.

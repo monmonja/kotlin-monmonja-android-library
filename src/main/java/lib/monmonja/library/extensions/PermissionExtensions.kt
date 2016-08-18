@@ -27,13 +27,13 @@ fun Fragment.askOnePermission(permission: String, requestCode: Int, granted: () 
     }
 }
 
-fun AppCompatActivity.grantedOnePermission(permission: String, requestCode: Int, permissionRequestCode:Int, afterGranted: () -> Unit) {
+fun AppCompatActivity.grantedOnePermission(requestCode: Int, permissionRequestCode:Int, afterGranted: () -> Unit) {
     if (requestCode == permissionRequestCode) {
         afterGranted()
     }
 }
 
-fun Fragment.grantedOnePermission(permission: String, requestCode: Int, grantResults: IntArray, permissionRequestCode:Int, afterGranted: () -> Unit) {
+fun Fragment.grantedOnePermission(requestCode: Int, grantResults: IntArray, permissionRequestCode:Int, afterGranted: () -> Unit) {
     for (grant in grantResults) {
         if (grant == PackageManager.PERMISSION_GRANTED) {
             if (requestCode == permissionRequestCode) {

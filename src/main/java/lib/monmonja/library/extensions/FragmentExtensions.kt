@@ -1,8 +1,8 @@
 package lib.monmonja.library.extensions
 
-import android.app.Fragment
-import android.app.FragmentManager
+import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentActivity
+import android.support.v4.app.FragmentManager
 import android.support.v7.app.AppCompatActivity
 import lib.monmonja.library.R
 
@@ -43,9 +43,9 @@ fun goToFragment(fragmentManager: FragmentManager, fragment: Fragment, replace:B
 }
 
 fun AppCompatActivity.goToFragment(fragment: Fragment) {
-    goToFragment(fragmentManager, fragment)
+    goToFragment(supportFragmentManager, fragment)
 }
 
 fun FragmentActivity.goToFragment(fragment: Fragment) {
-    goToFragment(fragmentManager, fragment)
+    goToFragment(supportFragmentManager, fragment)
 }
