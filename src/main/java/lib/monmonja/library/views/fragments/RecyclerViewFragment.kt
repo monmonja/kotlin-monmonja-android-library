@@ -10,6 +10,7 @@ import lib.monmonja.library.R
 import org.jetbrains.anko.backgroundColor
 import org.jetbrains.anko.support.v4.ctx
 import org.jetbrains.anko.support.v4.find
+import org.jetbrains.anko.support.v4.findOptional
 
 /**
  * Created by almondjoseph on 7/8/2016.
@@ -37,10 +38,13 @@ open class RecyclerViewFragment: Fragment() {
     }
 
     open fun checkEmptyView () {
-        if (mRecyclerView.adapter.itemCount == 0) {
-            find<View>(R.id.empty_layout).visibility = View.VISIBLE
-        } else {
-            find<View>(R.id.empty_layout).visibility = View.GONE
+        val emptyLayout = findOptional<View>(R.id.empty_layout)
+        if (emptyLayout != null) {
+            if (mRecyclerView.adapter.itemCount == 0) {
+                emptyLayout.visibility = View.VISIBLE
+            } else {
+                emptyLayout.visibility = View.GONE
+            }
         }
     }
 

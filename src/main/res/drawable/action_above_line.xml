@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="@dimen/active_above_line_width_negative"
+            android:left="@dimen/active_above_line_width_negative"
+            android:right="@dimen/active_above_line_width_negative">
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:color="@color/border_color" android:width="@dimen/active_above_line_width"/>
+        </shape>
+    </item>
+</layer-list>

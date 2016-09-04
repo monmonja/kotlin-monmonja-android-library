@@ -31,12 +31,11 @@ fun JSONRPC2Session.request(ctx: Context, method:String, params: Map <String, An
     try {
         val response: JSONRPC2Response? = send(request)
         if (response != null) {
-            val gson: Gson = Gson()
-            val videoResult: Any = gson.fromJson(response.toJSONObject().toJSONString(), mapClass)
+            val result: Any = Gson().fromJson(response.toJSONObject().toJSONString(), mapClass)
 
             uiThread {
-                ctx.debug("done" + response.toJSONObject().toJSONString())
-                success(videoResult)
+//                ctx.debug("done" + response.toJSONObject().toJSONString())
+                success(result)
             }
         }
     } catch (e:Exception) {

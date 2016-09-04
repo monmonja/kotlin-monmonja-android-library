@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorAccentLight">#8D6E63</color>
+    <color name="color_primary">#3F51B5</color>
+    <color name="color_primary_dark">#303F9F</color>
+    <color name="color_accent">#FF4081</color>
+    <color name="color_accent_light">#8D6E63</color>
 
-    <color name="colorAccent2">#2979FF</color>
-    <color name="colorAccent2Light">#448AFF</color>
+    <color name="color_accent2">#2979FF</color>
+    <color name="color_accent2_light">#448AFF</color>
 
     <color name="window_background">#F9F7F5</color>
     <color name="divider_color">#1F000000</color>
-    <color name="refresh_progress_1">@color/colorAccent2</color>
-    <color name="refresh_progress_2">@color/colorAccent</color>
-    <color name="refresh_progress_3">@color/colorPrimaryDark</color>
-    <color name="refresh_progress_4">@color/colorAccentLight</color>
+    <color name="border_color">#1F000000</color>
 
-    <color name="bodyText1">#de000000</color>
-    <color name="bodyText2">#8a000000</color>
-    <color name="bodyText3">#60000000</color>
-    <color name="bodyTextDisabled">#44000000</color>
-    <color name="bodyText1Invert">#deFFFFFF</color>
+    <color name="refresh_progress_1">@color/color_accent2</color>
+    <color name="refresh_progress_2">@color/color_accent</color>
+    <color name="refresh_progress_3">@color/color_primary_dark</color>
+    <color name="refresh_progress_4">@color/color_accent_light</color>
+
+    <color name="body_text1">#de000000</color>
+    <color name="body_text2">#8a000000</color>
+    <color name="body_text3">#60000000</color>
+    <color name="body_text_disabled">#44000000</color>
+    <color name="body_text1_invert">#deFFFFFF</color>
+
+    <color name="tab_indicator">#FFF</color>
 </resources>
