@@ -32,8 +32,9 @@ abstract class BaseAdapter<T, VH: RecyclerView.ViewHolder>(): RecyclerView.Adapt
 
     protected val ADS_TYPE: Int = 1
     protected val CONTENT_TYPE: Int = 0
+    protected val EMPTY_VIEW_TYPE: Int = 2
 
-    fun getAdsPositionAddIndex (position:Int):Int {
+    open fun getAdsPositionAddIndex (position:Int):Int {
         if (position >= adsAfterItemPosition * 2) {
             return 2
         } else if (position >= adsAfterItemPosition) {
