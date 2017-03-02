@@ -17,7 +17,7 @@ class LinearLayoutScrollListener(val loadMore: (s: String) -> Unit): RecyclerVie
         val visibleItemCount = recyclerView!!.layoutManager.childCount
         val totalItemCount = recyclerView.layoutManager.itemCount
         var pastVisibleItems = (recyclerView.layoutManager as LinearLayoutManager).findFirstVisibleItemPosition()
-        if (totalItemCount > 0 && visibleItemCount + pastVisibleItems > totalItemCount) {
+        if (totalItemCount > 0 && visibleItemCount + pastVisibleItems >= totalItemCount) {
             loadMore(mCursor)
         }
     }
