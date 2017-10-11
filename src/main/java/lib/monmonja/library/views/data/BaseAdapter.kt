@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView
 /**
  * Created by almondjoseph on 7/8/2016.
  */
-abstract class BaseAdapter<T, VH: RecyclerView.ViewHolder>(): RecyclerView.Adapter<VH>() {
+abstract class BaseAdapter<T, VH: RecyclerView.ViewHolder> : RecyclerView.Adapter<VH>() {
     val mData: MutableList<T> = mutableListOf()
     /*
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolder? {
